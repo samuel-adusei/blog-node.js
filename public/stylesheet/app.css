@@ -1,0 +1,83 @@
+html{
+font-size:16px;
+}
+
+body #top_banner {
+    background: transparent url(http://production.townsquareblogs.com/wp-content/uploads/2014/05/dark1.png) 50% bottom no-repeat;
+    padding: 9px 0px 23px;
+    position: relative;
+    z-index: 3;
+	height: 255px;
+	max-width:1550px;
+	min-width: 1000px;
+}
+
+.img-size {
+	min-width: 200px;
+	max-width: 500px;
+	display: flex;
+	padding-bottom: 0px;
+	margin-left: 250px;
+}
+
+
+.media:first-child {
+    margin-top: 80px;
+}	
+
+div.media 	{
+    width: 760px;
+	height:auto;
+}
+
+.media, .media-body {
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 21px;
+}
+
+.media-heading  {
+	  width: 300px;.jumbotron {
+	min-width: 1000px;	
+	max-width: 1026px;
+	  margin-right:auto;
+  margin-left:auto;
+  padding-right: 31px;
+  background-color:white;
+box-shadow: 0px 0px 12px 10px  grey;
+
+}
+    margin-left: 50px;
+	font-weight:bolder;	
+}
+
+p.media {
+    width: 300px;
+    margin-left: 50px;
+}
+
+
+div.meta{
+	    padding-bottom: 23px;
+    border-top-width: 0px;
+    border-style: groove;
+    clear: both;
+    width: 550px;
+	margin-bottom: 30px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+
+.jumbotron {
+	min-width: 1000px;	
+	max-width: 1026px;
+	  margin-right:auto;
+  margin-left:auto;
+  margin-top:30px;
+  padding-right: 31px;
+  background-color:#ddd;
+box-shadow: 0px 0px 12px 10px  grey;
+
+
+}

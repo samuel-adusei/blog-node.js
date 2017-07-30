@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+
+   <%= blog.title %> 
+    <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+
+            <label>Title</label>
+            <input type="text" name="blog[title]" value="<%= blog.title %>">
+            <label>Image</label>
+            <input type="text" name="blog[image]" value="<%= blog.image %>">
+            <label>Blog Content</label>
+            <textarea name="blog[body]"><%= blog.body %></textarea>
+        <input  type="submit">
+    </form>
+	
+	<% include ./partials/footer %>
+

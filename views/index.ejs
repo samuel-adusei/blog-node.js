@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+
+
+
+<!--  will create a loop function to allow us to show our blogs and more we add -->
+
+
+            <% blogs.forEach(function(blog){ %>		<!-- this starts the loop -->
+			<div class ="jumbotron">
+                        <img src ="<%= blog.image %>" class="img-size">	<!-- this shows the image file -->
+                
+                         <a href="/blogs/<%= blog._id %>"><%=blog.title%></a>	<!-- this  makes title link with id -->
+                             <span><%= blog.created.toDateString() %></span>	<!-- this shows the date in a neat format -->
+               
+                             <p><%- blog.body.substring(0, 100) %>...</p>	<!-- this shows a short para for our read me -->
+                     
+                             <a href="/blogs/<%= blog._id %>">
+                                 Read More
+                             </a>	<!-- this should link back to the id of the blog u selected -->
+							   <div class="meta">	</div>
+
+							   
+								</div>
+							   
+            <% }) %>
+       
+	   <% include ./partials/footer %>
